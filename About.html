@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title> university website design </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+         <section  class="Sub-header">
+		 <nav> 
+		 <a href="index.html"> <img src="images/logo.png"></a>           
+                 <div class="nav-links" id="navlinks">
+                         
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                 <li><a href="index.html">HOME</a></li>
+                 <li class="active-1"><a href="About.html">ABOUT</a></li>  
+                 <li><a href="course.html">COURSE</a></li>
+                 <li><a href="blog.html">BLOG</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+           </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+          <h1>About Us</h1> 
+		 </section>
+
+         <!---------about us content----------->    
+
+
+         <section class="about-us">
+         <div class="row">
+                 <div class="about-col">
+                         <h1> We are the world's largest university</h1>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ipsa inventore sint quae cum, rem libero optio exercitationem. Facilis odit mollitia repellendus sit quaerat nisi veniam ipsa neque dolores ipsam.</p>
+                         <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+                 </div>
+                 <div class="about-col">
+                  <img src="images/about.jpg">       
+                 </div>
+         </div>
+</section>
+
+
+<!----------------Footer----------------->
+<section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam possimus nobis corrupti porro. <br>Nisi asperiores nemo modi nostrum sequi fugit iste incidunt velit quasi aut rem, soluta atque, numquam quidem.<p>
+        <div class="icons">
+                <a href="https://www.facebook.com"  target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com"  target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com"  target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://in.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Shashank Singhal</p>
+
+        </section> 
+
+<!---------------------javascript for toggle menu---------------->  
+             <script>
+              var navlinks = document.getElementById("navlinks");
+              function showMenu(){
+                      navlinks.style.right="0"
+              }    
+              function hideMenu(){
+                      navlinks.style.right="-200px";
+              }
+              </script>
+</body>
+</html>
